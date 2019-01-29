@@ -8,24 +8,25 @@ namespace Cs_Playground
     {
         public static void Main(string[] args)
         {
-            
-            Console.WriteLine("before first task!");
-            LoadMesh();
-                              Console.WriteLine("after first task!");
-            Thread.Sleep(7000);
+            //Test();
+            TestDeadlock();
         }
 
-        private static async Task LoadMesh() {
+        #region Await order test
+        private static async Task LoadMesh()
+        {
             await LoadCustomHeadsFromOBN();
             Console.WriteLine("continue ClearHeadConstructionBlendshape");
         }
 
-        private static async Task LoadCustomHeadsFromOBN() {
+        private static async Task LoadCustomHeadsFromOBN()
+        {
             await LoadMeshesFromOBN();
         }
 
 
-        private static async Task LoadMeshesFromOBN() {
+        private static async Task LoadMeshesFromOBN()
+        {
             //Thread.Sleep(5000);
             await Task.Run(() =>
             {
@@ -34,6 +35,49 @@ namespace Cs_Playground
             });
             Console.WriteLine("calculation finishes!");
         }
+        #endregion
+
+        #region Task
+        /// <summary>
+        ///  Task can return value, but Thread cannot
+        /// </summary>
+        public static void Test()
+        {
+            Console.WriteLine("Before call task");
+            var strRes = Task.Run<string>(() => { return GetReturnResult(); });
+
+            //This will block
+            Console.WriteLine(strRes.Result);
+
+
+            Console.WriteLine("After call task");
+
+            Thread.Sleep(6000);
+        }
+        static string GetReturnResult()
+        {
+            Console.WriteLine("About to sleep");
+            Thread.Sleep(5000);
+            Console.WriteLine("Sleep finish");
+            return "this is return";
+        }
+        #endregion
+
+        #region Deadlock
+        public static void TestDeadlock()
+        {
+            // Start the delay.
+            var delayTask = DelayAsync();
+            // Wait for the delay to complete.
+            delayTask.Wait();
+        }
+
+        private static async Task DelayAsync()
+        {
+            await Task.Delay(1000);
+        }
+#endregion 
+
 
 
 
