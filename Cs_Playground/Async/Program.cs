@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
-
+using Cs_Playground.Inheritance;
 namespace Cs_Playground
 {
     class MainClass
@@ -9,7 +9,10 @@ namespace Cs_Playground
         public static void Main(string[] args)
         {
             //Test();
-            TestDeadlock();
+            //TestDeadlock();
+            TestBaseClass test = new TestBaseClass();
+            test.Test();
+
         }
 
         #region Await order test

@@ -1,16 +1,17 @@
 ﻿<Properties StartupConfiguration="{8F79B293-FEAB-418C-A7F9-7ACFC3FE6873}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Cs_Playground/Async/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Cs_Playground/Inheritance/BaseClass.cs">
     <Files>
-      <File FileName="Cs_Playground/Async/Program.cs" Line="23" Column="30" />
+      <File FileName="Cs_Playground/Async/Program.cs" Line="13" Column="9" />
       <File FileName="Cs_Playground/Properties/AssemblyInfo.cs" Line="1" Column="1" />
+      <File FileName="Cs_Playground/Inheritance/BaseClass.cs" Line="12" Column="18" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Cs_Playground" expanded="True">
             <Node name="Cs_Playground" expanded="True">
-              <Node name="Async" expanded="True">
-                <Node name="Program.cs" selected="True" />
+              <Node name="Inheritance" expanded="True">
+                <Node name="BaseClass.cs" selected="True" />
               </Node>
               <Node name="Properties" expanded="True" />
             </Node>
