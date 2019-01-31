@@ -4,3 +4,7 @@
 /Users/subodhsah/Projects/CsharpProject/Cs_Playground/Cs_Playground/obj/x86/Debug/Cs_Playground.csproj.CoreCompileInputs.cache
 /Users/subodhsah/Projects/CsharpProject/Cs_Playground/Cs_Playground/obj/x86/Debug/Cs_Playground.exe
 /Users/subodhsah/Projects/CsharpProject/Cs_Playground/Cs_Playground/obj/x86/Debug/Cs_Playground.pdb
+/Users/subodhsah/Projects/CsharpProject/Cs_Playground/Cs_Playground/bin/Debug/nunit.framework.dll
+/Users/subodhsah/Projects/CsharpProject/Cs_Playground/Cs_Playground/bin/Debug/nunit.framework.pdb
+/Users/subodhsah/Projects/CsharpProject/Cs_Playground/Cs_Playground/bin/Debug/nunit.framework.xml
+/Users/subodhsah/Projects/CsharpProject/Cs_Playground/Cs_Playground/obj/x86/Debug/Cs_Playground.csproj.CopyComplete

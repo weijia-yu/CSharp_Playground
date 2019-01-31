@@ -10,8 +10,11 @@ namespace Cs_Playground
         {
             //Test();
             //TestDeadlock();
-            TestBaseClass test = new TestBaseClass();
-            test.Test();
+            //TestBaseClass test = new TestBaseClass();
+            //test.Test();
+
+            var jsonTask = ReturnIntAsync();
+            Console.WriteLine(jsonTask.Result);
 
         }
 
@@ -79,10 +82,30 @@ namespace Cs_Playground
         {
             await Task.Delay(1000);
         }
-#endregion 
+
+        // My "library" method.
+        public static async Task<int> GetJsonAsync()
+        {
+            var jsonString = await ReturnIntAsync();
+            return jsonString;
+        }
+
+        public static async Task<int> ReturnIntAsync()
+        {
+            int i = 0;
+            await new Task(() => i++);
+            return i;
+        }
+
+        #endregion 
 
 
 
 
     }
+
+
+
+
+
 }
