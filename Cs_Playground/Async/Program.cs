@@ -8,14 +8,9 @@ namespace Cs_Playground
     {
         public static void Main(string[] args)
         {
-            //Test();
-            //TestDeadlock();
-            //TestBaseClass test = new TestBaseClass();
-            //test.Test();
-
-            var jsonTask = ReturnIntAsync();
+            var jsonTask = GetJsonAsync();
+            int i = jsonTask.Result;
             Console.WriteLine(jsonTask.Result);
-
         }
 
         #region Await order test
@@ -93,7 +88,7 @@ namespace Cs_Playground
         public static async Task<int> ReturnIntAsync()
         {
             int i = 0;
-            await new Task(() => i++);
+            await Task.Delay(1000);
             return i;
         }
 
