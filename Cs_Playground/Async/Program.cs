@@ -2,15 +2,34 @@
 using System.Threading;
 using System.Threading.Tasks;
 using Cs_Playground.Inheritance;
+using Cs_Playground.Async;
+using Cs_Playground.DesignPattern;
 namespace Cs_Playground
 {
     class MainClass
     {
         public static void Main(string[] args)
         {
-            var jsonTask = GetJsonAsync();
-            int i = jsonTask.Result;
-            Console.WriteLine(jsonTask.Result);
+
+            //var jsonTask = GetJsonAsync();
+            //int i = jsonTask.Result;
+            //Console.WriteLine(jsonTask.Result);
+
+
+            //custom async experiment
+
+            //var task = Task.Run(async () => await ReturnIntAsync());
+            //TestCustomAsync().Wait();
+            //var task = TestCustomAsync();
+            //Console.WriteLine("after result");
+            //Console.WriteLine(task.Result);
+            //AlgorithmA a = new AlgorithmA();
+            //a.FinishOneTask();
+            //AlgorithmAsyncInstance a = new AlgorithmAsyncInstance();
+            //a.FinishOneTask();
+            new Jeep(new ManualShift()).Print();
+            new BMW(new AutomaticShift()).Print();
+
         }
 
         #region Await order test
@@ -88,19 +107,22 @@ namespace Cs_Playground
         public static async Task<int> ReturnIntAsync()
         {
             int i = 0;
-            await Task.Delay(1000);
+            await Task.Delay(2000);
             return i;
         }
 
-        #endregion 
+        #endregion
 
-
+        #region Custom async
+        private static async Task<int> TestCustomAsync() {
+            int result = await new Func<int>(() => 0);
+            return result;
+            
+        }
+        #endregion
 
 
     }
 
-
-
-
-
 }
+

@@ -1,18 +1,23 @@
 ﻿<Properties StartupConfiguration="{8F79B293-FEAB-418C-A7F9-7ACFC3FE6873}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Cs_Playground/Async/CustomAwaiter.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DesignPattern/BridgePattern.cs">
     <Files>
-      <File FileName="Cs_Playground/Async/Program.cs" Line="110" Column="53" />
-      <File FileName="Cs_Playground/Inheritance/BaseClass.cs" Line="5" Column="31" />
-      <File FileName="Cs_Playground/Tests/Test.cs" Line="17" Column="39" />
-      <File FileName="Cs_Playground/Async/ExtensionMethods.cs" Line="9" Column="34" />
-      <File FileName="Cs_Playground/Async/IWaiter.cs" Line="1" Column="1" />
-      <File FileName="Cs_Playground/Async/CustomAwaiter.cs" Line="10" Column="48" />
+      <File FileName="DesignPattern/TemplatePattern.cs" Line="33" Column="5" />
+      <File FileName="DesignPattern/TemplateAsyncPattern.cs" Line="8" Column="22" />
+      <File FileName="Tests/Test.cs" Line="20" Column="9" />
+      <File FileName="Async/Program.cs" Line="29" Column="30" />
+      <File FileName="DesignPattern/BridgePattern.cs" Line="8" Column="13" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Cs_Playground" expanded="True" selected="True">
-            <Node name="Cs_Playground" expanded="True" />
+          <Node name="Cs_Playground" expanded="True">
+            <Node name="Cs_Playground" expanded="True">
+              <Node name="Async" expanded="True" />
+              <Node name="DesignPattern" expanded="True">
+                <Node name="BridgePattern.cs" selected="True" />
+              </Node>
+              <Node name="Tests" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
@@ -33,9 +38,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/subodhsah/Projects/CsharpProject/Cs_Playground/Cs_Playground/Program.cs" relfile="Cs_Playground/Program.cs" line="13" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Cs__Playground PreferredExecutionTarget="MonoDevelop.Default" />

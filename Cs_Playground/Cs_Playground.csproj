@@ -40,11 +40,16 @@
     <Compile Include="Async\Program.cs" />
     <Compile Include="Inheritance\BaseClass.cs" />
     <Compile Include="Tests\Test.cs" />
+    <Compile Include="Async\ExtensionMethods.cs" />
+    <Compile Include="DesignPattern\TemplatePattern.cs" />
+    <Compile Include="DesignPattern\TemplateAsyncPattern.cs" />
+    <Compile Include="DesignPattern\BridgePattern.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Async\" />
     <Folder Include="Inheritance\" />
     <Folder Include="Tests\" />
+    <Folder Include="DesignPattern\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
