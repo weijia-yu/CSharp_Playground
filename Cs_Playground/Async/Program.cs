@@ -27,8 +27,12 @@ namespace Cs_Playground
             //a.FinishOneTask();
             //AlgorithmAsyncInstance a = new AlgorithmAsyncInstance();
             //a.FinishOneTask();
-            new Jeep(new ManualShift()).Print();
-            new BMW(new AutomaticShift()).Print();
+            //new Jeep(new ManualShift()).Print();
+            //new BMW(new AutomaticShift()).Print();
+
+            //adapter pattern
+            new V1Player().Play("mp3", "name");
+            new V2Player().Play("mp3", "name");
 
         }
 

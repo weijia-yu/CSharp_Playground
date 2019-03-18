@@ -4,8 +4,9 @@
       <File FileName="DesignPattern/TemplatePattern.cs" Line="33" Column="5" />
       <File FileName="DesignPattern/TemplateAsyncPattern.cs" Line="8" Column="22" />
       <File FileName="Tests/Test.cs" Line="20" Column="9" />
-      <File FileName="Async/Program.cs" Line="29" Column="30" />
-      <File FileName="DesignPattern/BridgePattern.cs" Line="8" Column="13" />
+      <File FileName="Async/Program.cs" Line="31" Column="50" />
+      <File FileName="DesignPattern/BridgePattern.cs" Line="10" Column="34" />
+      <File FileName="DesignPattern/AdapterPattern.cs" Line="1" Column="14" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
