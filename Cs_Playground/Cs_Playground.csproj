@@ -45,6 +45,7 @@
     <Compile Include="DesignPattern\TemplateAsyncPattern.cs" />
     <Compile Include="DesignPattern\BridgePattern.cs" />
     <Compile Include="DesignPattern\AdapterPattern.cs" />
+    <Compile Include="DesignPattern\CriterionPattern.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Async\" />

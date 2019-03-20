@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using Cs_Playground.Inheritance;
 using Cs_Playground.Async;
 using Cs_Playground.DesignPattern;
+
 namespace Cs_Playground
 {
     class MainClass
@@ -31,8 +33,32 @@ namespace Cs_Playground
             //new BMW(new AutomaticShift()).Print();
 
             //adapter pattern
-            new V1Player().Play("mp3", "name");
-            new V2Player().Play("mp3", "name");
+            //new V1Player().Play("mp3", "name");
+            //new V2Player().Play("mp3", "name");
+
+            //Criterion pattern
+            List<Clothes> clothesList = new List<Clothes>(); 
+
+            clothesList.Add(new Clothes("topping", "white", "male"));
+            clothesList.Add(new Clothes("topping", "black", "male"));
+            clothesList.Add(new Clothes("topping", "blue", "female"));
+            clothesList.Add(new Clothes("dress", "white", "female"));
+            clothesList.Add(new Clothes("dress", "black", "female"));
+            clothesList.Add(new Clothes("dress", "blue", "female"));
+
+            ClothesCriterion male = new MaleClothesCriterion();
+
+            ClothesCriterion topping = new ToppingClothesCriterion();
+            ClothesCriterion maleAndTopping = new AndCriterion(male, topping);
+
+
+           
+            printCothes(male.chooseClothes(clothesList));
+
+            printCothes(topping.chooseClothes(clothesList));
+
+            printCothes(maleAndTopping.chooseClothes(clothesList));
+                       
 
         }
 
@@ -125,6 +151,12 @@ namespace Cs_Playground
         }
         #endregion
 
+        public static void printCothes(List<Clothes> clothesList) {
+   
+        foreach (Clothes clothes in clothesList) {
+                Console.WriteLine("Clothes : [ ClothesColor : " + clothes.ClothesColor + ", ClothesGender : " + clothes.ClothesGender + ", ClothesType : " + clothes.ClothesType + " ]");
+        }
+        }  
 
     }
 
