@@ -46,6 +46,8 @@
     <Compile Include="DesignPattern\BridgePattern.cs" />
     <Compile Include="DesignPattern\AdapterPattern.cs" />
     <Compile Include="DesignPattern\CriterionPattern.cs" />
+    <Compile Include="DesignPattern\AbstractFactoryPattern.cs" />
+    <Compile Include="Async\PlayerExample.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Async\" />

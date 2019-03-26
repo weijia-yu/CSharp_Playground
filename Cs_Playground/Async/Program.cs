@@ -37,27 +37,35 @@ namespace Cs_Playground
             //new V2Player().Play("mp3", "name");
 
             //Criterion pattern
-            List<Clothes> clothesList = new List<Clothes>(); 
+            //List<Clothes> clothesList = new List<Clothes>(); 
 
-            clothesList.Add(new Clothes("topping", "white", "male"));
-            clothesList.Add(new Clothes("topping", "black", "male"));
-            clothesList.Add(new Clothes("topping", "blue", "female"));
-            clothesList.Add(new Clothes("dress", "white", "female"));
-            clothesList.Add(new Clothes("dress", "black", "female"));
-            clothesList.Add(new Clothes("dress", "blue", "female"));
+            //clothesList.Add(new Clothes("topping", "white", "male"));
+            //clothesList.Add(new Clothes("topping", "black", "male"));
+            //clothesList.Add(new Clothes("topping", "blue", "female"));
+            //clothesList.Add(new Clothes("dress", "white", "female"));
+            //clothesList.Add(new Clothes("dress", "black", "female"));
+            //clothesList.Add(new Clothes("dress", "blue", "female"));
 
-            ClothesCriterion male = new MaleClothesCriterion();
+            //ClothesCriterion male = new MaleClothesCriterion();
 
-            ClothesCriterion topping = new ToppingClothesCriterion();
-            ClothesCriterion maleAndTopping = new AndCriterion(male, topping);
+            //ClothesCriterion topping = new ToppingClothesCriterion();
+            //ClothesCriterion maleAndTopping = new AndCriterion(male, topping);
 
 
-           
-            printCothes(male.chooseClothes(clothesList));
 
-            printCothes(topping.chooseClothes(clothesList));
+            //printCothes(male.chooseClothes(clothesList));
 
-            printCothes(maleAndTopping.chooseClothes(clothesList));
+            //printCothes(topping.chooseClothes(clothesList));
+
+            //printCothes(maleAndTopping.chooseClothes(clothesList));
+
+            //Abstract factory
+            //ModelXFactory modelXFactory = new ModelXFactory();
+            //modelXFactory.CreateCar().GetCarInfo();
+
+            //Design pattern adapt example
+            new MainExampleClass().Main();
+
                        
 
         }

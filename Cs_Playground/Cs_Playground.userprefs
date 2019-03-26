@@ -1,23 +1,26 @@
 ﻿<Properties StartupConfiguration="{8F79B293-FEAB-418C-A7F9-7ACFC3FE6873}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="DesignPattern/CriterionPattern.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Async/PlayerExample.cs">
     <Files>
       <File FileName="DesignPattern/TemplatePattern.cs" Line="33" Column="5" />
       <File FileName="DesignPattern/TemplateAsyncPattern.cs" Line="8" Column="22" />
       <File FileName="Tests/Test.cs" Line="20" Column="9" />
-      <File FileName="Async/Program.cs" Line="12" Column="10" />
+      <File FileName="Async/Program.cs" Line="9" Column="1" />
       <File FileName="DesignPattern/BridgePattern.cs" Line="2" Column="24" />
-      <File FileName="DesignPattern/AdapterPattern.cs" Line="11" Column="39" />
-      <File FileName="DesignPattern/CriterionPattern.cs" Line="1" Column="1" />
+      <File FileName="DesignPattern/AdapterPattern.cs" Line="24" Column="6" />
+      <File FileName="DesignPattern/CriterionPattern.cs" Line="3" Column="1" />
+      <File FileName="DesignPattern/AbstractFactoryPattern.cs" Line="7" Column="6" />
+      <File FileName="Async/PlayerExample.cs" Line="7" Column="21" />
+      <File FileName="Async/ExtensionMethods.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Cs_Playground" expanded="True">
             <Node name="Cs_Playground" expanded="True">
-              <Node name="Async" expanded="True" />
-              <Node name="DesignPattern" expanded="True">
-                <Node name="CriterionPattern.cs" selected="True" />
+              <Node name="Async" expanded="True">
+                <Node name="PlayerExample.cs" selected="True" />
               </Node>
+              <Node name="DesignPattern" expanded="True" />
               <Node name="Tests" expanded="True" />
             </Node>
           </Node>
